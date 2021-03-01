@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-zebra-externalkeypad" version="1.0">
+        id="cordova-plugin-zebra-externalkeypad" version="0.0.2">
     <name>Cordova Plugin - Zebra External Keypad</name>
 
     <description>An Android Cordova plugin to identify if Zebra's external (physical) keypad is connected to the device.</description>
