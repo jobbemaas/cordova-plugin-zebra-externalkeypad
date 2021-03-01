@@ -1,5 +1,5 @@
 {
-  "name": "ZebraExternalKeypad",
+  "name": "Cordova Plugin Zebra External Keypad",
   "version": "1.0",
   "description": "An Android Cordova plugin to identify if Zebra's external (physical) keypad is connected to the device.",
   "cordova": {
