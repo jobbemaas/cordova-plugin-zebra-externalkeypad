@@ -6,7 +6,7 @@ Allows you to detect if the phyisical external keypad is connected to the Zebra 
 
 ## Function to get connection status
 
-`success` is a callback called to return the status (connected/disconnected).
+`success` is a callback called with the result, when the function is executed properly.
 
 `error` is a callback called if anything goes wrong. (Optional)
 
