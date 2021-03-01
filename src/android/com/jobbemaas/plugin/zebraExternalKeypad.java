@@ -1,4 +1,4 @@
-package com.GMLSDantas.plugin;
+package com.jobbemaas.plugin;
 
 import android.content.Intent;
 import android.content.Context;
@@ -24,8 +24,8 @@ public class ExternalKeypad extends CordovaPlugin {
 
     private void isKeypadConnected(CallbackContext callbackContext,Context context){
         Configuration config = context.getResources().getConfiguration();
-        int keyboard = config.keyboard;
-        if (keyboard != Configuration.KEYBOARD_NOKEYS) {
+        int keypad = config.keypad;
+        if (keypad != Configuration.KEYBOARD_NOKEYS) {
             callbackContext.success("true");
         } else {
             callbackContext.success("false");
