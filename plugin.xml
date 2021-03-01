@@ -15,8 +15,8 @@
         <engine name="cordova" version=">=7.1.0"/>
     </engines>
   
-    <js-module src="www/zebraExternalKeypad.js" name="zebraExternalKeypad">
-        <clobbers target="window.plugins.zebraExternalKeypad" />
+    <js-module src="www/ZebraExternalKeypad.js" name="ZebraExternalKeypad">
+        <clobbers target="window.plugins.ZebraExternalKeypad" />
     </js-module>
 	
     <platform name="android">
