@@ -1,0 +1,34 @@
+{
+  "name": "ZebraExternalKeypad",
+  "version": "1.0",
+  "description": "An Android Cordova plugin identifies if Zebra's external (physical) keypad is connected to the device.",
+  "cordova": {
+    "id": "externalkeypad",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobbemaas/cordova-plugin-zebra-externalkeypad.git"
+  },
+  "keywords": [
+    "Zebra",
+    "Keyboard",
+    "Keypad",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=7.1.0"
+    }
+  ],
+  "author": "Jobbe Maas <jobbemaas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jobbemaas/cordova-plugin-zebra-externalkeypad/issues"
+  },
+  "homepage": "https://github.com/jobbemaas/cordova-plugin-zebra-externalkeypad/"
+}

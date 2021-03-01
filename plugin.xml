@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-zebra-externalkeypad" version="1.0">
+    <name>Zebra External Keypad</name>
+
+    <description>An Android Cordova plugin that identifies if Zebra's external keypad is connected to the device.</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,zebra,keyboard,keypad,external,mount,wt6000,wt6300,KYPD-WT6XANFASM-01</keywords>
+    <repo>https://github.com/jobbemaas/cordova-plugin-zebra-externalkeypad</repo>
+    <issue>https://github.com/jobbemaas/cordova-plugin-zebra-externalkeypad/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=7.1.0"/>
+    </engines>
+  
+    <js-module src="www/externalkeypad.js" name="externalKeypad">
+        <clobbers target="window.plugins.externalKeypad" />
+    </js-module>
+	
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ExternalKeypad">
+                <param name="android-package" value="com.jobbemaas.plugin.ExternalKeypad"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/com/jobbemaas/plugin/ExternalKeypad.java" target-dir="src/com/jobbemaas/plugin" />
+    </platform>
+</plugin>
