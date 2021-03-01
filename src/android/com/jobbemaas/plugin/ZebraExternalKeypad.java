@@ -13,7 +13,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class ExternalKeypad extends CordovaPlugin {
+public class ZebraExternalKeypad extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
@@ -24,8 +24,8 @@ public class ExternalKeypad extends CordovaPlugin {
 
     private void isKeypadConnected(CallbackContext callbackContext,Context context){
         Configuration config = context.getResources().getConfiguration();
-        int keypad = config.keypad;
-        if (keypad != Configuration.KEYBOARD_NOKEYS) {
+        int Keypad = config.Keypad;
+        if (Keypad != Configuration.KEYBOARD_NOKEYS) {
             callbackContext.success("true");
         } else {
             callbackContext.success("false");
