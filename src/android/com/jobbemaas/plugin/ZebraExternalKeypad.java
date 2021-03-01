@@ -24,8 +24,8 @@ public class ZebraExternalKeypad extends CordovaPlugin {
 
     private void isConnected(CallbackContext callbackContext,Context context){
         Configuration config = context.getResources().getConfiguration();
-        int Keypad = config.keypad;
-        if (Keypad != Configuration.KEYBOARD_NOKEYS) {
+        int Keyboard = config.keyboard;
+        if (Keyboard != Configuration.KEYBOARD_NOKEYS) {
             callbackContext.success("true");
         } else {
             callbackContext.success("false");
