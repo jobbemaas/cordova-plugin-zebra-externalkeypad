@@ -2,8 +2,8 @@
 function ZebraExternalKeypad() {}
 
 // The function that passes work along to native shells
-ZebraExternalKeypad.prototype.isExternalKeypadConnected = function(successCallback, errorCallback) {
-  cordova.exec(successCallback, errorCallback, 'ZebraExternalKeypad', 'isKeypadConnected');
+ZebraExternalKeypad.prototype.isConnected = function(successCallback, errorCallback) {
+  cordova.exec(successCallback, errorCallback, 'ZebraExternalKeypad', 'isConnected');
 }
 
 // Installation constructor that binds the external keypad plugin to window (with name: ZebraExternalKeypad)
