@@ -4,7 +4,7 @@ Allows you to detect if the phyisical external keypad is connected to the Zebra 
 
 # API
 
-## Get Status Functions
+## Function to get connection status
 
 `success` is a callback called to return the status (connected/disconnected).
 
