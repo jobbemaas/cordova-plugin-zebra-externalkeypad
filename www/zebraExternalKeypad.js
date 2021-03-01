@@ -2,8 +2,8 @@
 function externalKeypad() {}
 
 // The function that passes work along to native shells
-externalKeypad.prototype.isKeyboardConnected = function(successCallback, errorCallback) {
-  cordova.exec(successCallback, errorCallback, 'ExternalKeypad', 'isKeyboardConnected');
+externalKeypad.prototype.isExternalKeypadConnected = function(successCallback, errorCallback) {
+  cordova.exec(successCallback, errorCallback, 'ExternalKeypad', 'isKeypadConnected');
 }
 
 // Installation constructor that binds the external keypad plugin to window (with name: externalKeypad)
